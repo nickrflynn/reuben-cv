@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Nexa;
+  src: url("./assets/fonts/Nexa\ Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Nexa;
+  font-weight: bold;
+  src: url("./assets/fonts/Nexa\ Bold.otf") format("opentype");
+}
+
+html,
+body {
+  background: rgb(245, 245, 245);
+  font-family: Nexa, Arial, Helvetica, sans-serif;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+#cv {
+  width: 90%;
+  max-width: 800px;
+  background: rgb(255, 255, 255);
+  margin: 30px auto;
+  padding: 50px;
+}
+
+.name h1 {
+  margin-bottom: 5px;
+}
+
+.name h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.icon-container {
+  float: left;
+  height: 100%;
+  width: 75px;
+  padding-top: 4px;
+}
+
+.icon-container img {
+  width: 50px;
+}
+
+.item-container {
+  margin-left: 75px;
+}
+
+.item-container h3,
+.item-container h4,
+.item-container h5,
+.item-container h6 {
+  margin-bottom: 0;
+}
+
+.item-container h5,
+.item-container h6 {
+  margin-top: 3px;
+  font-size: 0.8rem;
+}
+
+.item-container > ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.item-container > ul li ul {
+  margin-top: 10px;
+}
+
+.item-container p {
+  margin-top: 5px;
+}
+
+.item-container ul {
+  margin: 0;
+}
+
+.education-title {
+  float: left;
+}
+
+.education-details {
+}
+
+.paper {
+  position: relative;
+  box-shadow: 0 0 0.5em rgba(195, 195, 195, 0.5);
+}
+.paper:before,
+.paper:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 1em;
+  width: 50%;
+  top: 80%;
+  background: rgb(119, 119, 119);
+  box-shadow: 0 1em 0.5em rgb(119, 119, 119);
+}
+.paper:before {
+  transform: rotate(-3deg);
+  left: 0.5em;
+}
+.paper:after {
+  transform: rotate(3deg);
+  right: 0.5em;
+}
